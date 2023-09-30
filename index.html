@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Alarm Clock
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+    <h1>
+    Alarm Clock
+    </h1>
+    <h2 id="currentDate"></h2>
+    <form>
+        <!-- <label for="appt-time">Choose an appointment time: </label> -->
+        <input id="addAlarm" type="time" name="addAlarm" step="2" onchange="checkValidation()"/>
+    <button type="submit" id="setButton">Set Alarm</button> 
+    </form>
+    <div class="alarms">Alarms</div>
+    <ul list-style-type="none" id="alarm-list">
+    </ul> 
+</div>
+    <script src="myScript.js"></script>
+</body>
+</html>
